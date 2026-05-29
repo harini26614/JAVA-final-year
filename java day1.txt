@@ -1,0 +1,153 @@
+1. Reverse the number
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+	int n= sc.nextInt();
+	int rev=0;
+	while(n!=0){
+	   int digit =n%10;
+	   rev=rev*10+digit;
+	   n/=10;
+	}
+	System.out.println(" Reversed no :" +rev);
+	}
+}
+
+output:
+enter numbers : 235
+Reversed no : 532
+
+
+2. Sum of digits
+
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+	int n= sc.nextInt();
+	int s=0;
+	while(n!=0){
+	   s+=n%10;
+	   n/=10;
+	}
+	System.out.println(" sum of digits :" +s);
+	}
+} 
+output:
+enter numbers : 12345
+sum of digits :15
+
+
+3. count digits
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+	int n= sc.nextInt();
+	int count=0;
+	while(n!=0){
+	   n/=10;
+	   count++;
+	}
+	System.out.println(" number of digits :" +count);
+	}
+} 
+output:
+enter numbers :1234
+number of digits :4
+
+4.Palindrome in digit
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+	int n= sc.nextInt();
+	int org=n;
+	int rev=0;
+	while(n!=0){
+	    int digit = n%10;
+	    rev=rev*10+digit;
+	    n/=10;
+	}
+	if(org==rev){
+	    System.out.println("palindrome" +org);
+	}
+	else {
+	    System.out.println("not palindrome" +org  );
+	}
+	}
+} 
+output :
+enter numbers :4444
+palindrome 4444 
+
+
+5.prime number
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+	int n= sc.nextInt();
+	int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++; 
+            }
+        }
+        if (count == 2) {
+            System.out.println(n + " is a prime number");
+        } else {
+            System.out.println(n + " is NOT a prime number");
+        }
+    }
+}
+output:
+enter numbers :23
+23 is a prime number
+
+6. Armstrong number
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter numbers :");
+        int num = sc.nextInt();
+       int temp =num;
+       int sum=0;
+       int rem;
+       while (temp>0){
+           rem=temp%10;
+           sum=sum+(rem*rem*rem);
+           temp=temp/10;
+       }
+        if (sum == num) {
+            System.out.println(num + " is an Armstrong number.");
+        } else {
+            System.out.println(num + " is NOT an Armstrong number.");
+        }
+    }
+}
+output:
+enter numbers :153
+153 is an Armstrong number.
+

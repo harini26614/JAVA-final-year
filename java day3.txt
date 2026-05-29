@@ -1,0 +1,227 @@
+1. number triangle 
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter numbers :");
+		int a = sc.nextInt();
+	
+			for(int i=1; i<=a; i++) {
+					for(int j=1; j<=i; j++){
+					    System.out.print(j+" ");
+					}
+					System.out.println();
+			}
+		}
+	}
+
+output:
+
+enter numbers :5
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+2. right angle triangle pattern
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter numbers :");
+		int a = sc.nextInt();
+	
+			for(int i=1; i<=a; i++) {
+					for(int j=1; j<=i; j++){
+					    System.out.print("* ");
+					}
+					System.out.println();
+			}
+		}
+	}
+
+ o/p:
+
+enter numbers :5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+3.inverse right angle 
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter numbers :");
+		int a = sc.nextInt();
+		  for(int i=a; i>=1; i--) {
+		     for(int j=1; j<=i; j++){
+			 System.out.print("* ");
+		     }
+		 System.out.println();
+	      }
+       }
+} 
+
+O/P:
+
+enter numbers :5
+* * * * * 
+* * * * 
+* * * 
+* * 
+*  
+
+4. pyramid pattern
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("enter number :");
+        int a = sc.nextInt();
+        for (int i = 1; i <= a; i++) {
+            for (int j = i; j < a; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+output:
+enter number :5
+    *
+   ***
+  *****
+ *******
+*********
+
+5. inverse pyramid 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("enter number :");
+        int a = sc.nextInt();
+        for (int i = a; i >= 1; i--) {
+            for (int j = i; j < a; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+output:
+
+enter number :5
+
+*********
+ *******
+  *****
+   ***
+    *
+
+6.butterfly 
+
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Enter the number: ");
+int n = scanner.nextInt();
+
+for (int i = 1; i <= n; i++) {
+
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+
+for (int j = 1; j <= 2 * (n - i); j++) {
+System.out.print(" ");
+}
+
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+System.out.println();
+}
+
+for (int i = n; i >= 1; i--) {
+
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+
+for (int j = 1; j <= 2 * (n - i); j++) {
+System.out.print(" ");
+}
+
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}
+
+
+output:
+
+Enter the number: 6
+
+       
+*          *
+**        **
+***      ***
+****    ****
+*****  *****
+************
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          *
+
+7. Array program
+
+
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+int [] n = {1,2,3,4,5};
+for (int i=0;i< n.length ; i++) {
+    System.out.println("numbers: "+n[i]);
+}
+
+}
+} 
+
+output:
+
+numbers: 1
+numbers: 2
+numbers: 3
+numbers: 4
+numbers: 5
